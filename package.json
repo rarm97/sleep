@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint", 
+"db:migrate": "sh -c 'DATABASE_URL=\"postgresql://sleep:sleep@localhost:5432/sleep\" tsc -p scripts/tsconfig.json && node .scripts-dist/scripts/migrate.js'"
   },
   "dependencies": {
     "next": "16.1.1",
